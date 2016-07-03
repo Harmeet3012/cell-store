@@ -48,11 +48,12 @@ class UsersController < ApplicationController
   end
   
   def login
-    if !session[:user_id].blank?
-       redirect_to mobiles_path
-    else
-       render :login
-    end
+   @user = User.new
+#    if !session[:user_id].blank?
+ #      redirect_to mobiles_path
+ #   else
+  #     render :login
+   # end
   end
 
   def validate_login
