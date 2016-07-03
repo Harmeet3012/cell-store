@@ -29,13 +29,16 @@ development:
   adapter: postgresql
   database: cell_store
   host: localhost
-  username: 
-  password: 
+  username: postgres
+  password: postgres
+  template: template0
+  encoding: utf8
   
 production:
   adapter: postgresql
   database: cell_store
   host: localhost
-  username: 
-  password: 
-  
+  username: postgres
+  password: postgres
+  template: template0
+  encoding: utf8  
