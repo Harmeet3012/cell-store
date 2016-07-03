@@ -1,0 +1,16 @@
+<table border=1 class="table">
+    <tr class="danger">
+        <td>Name</td>
+        <td>Email</td>
+        <td>Mobile</td>
+        <td>Profile pic</td>
+    </tr>
+    <tr class="success">
+        <td><%= @user.name%></td>
+        <td><%= @user.email%></td>
+        <td><%= @user.mobile%></td>
+        <td><%= image_tag @user.image.photo(:thumb) if !@user.image.blank?%></td>
+    </tr>
+</table>
+<h1 align="center">Record saved successfully!</h1>
+<h4 align="right"><%= link_to "list_users", users_login_path%></h4>

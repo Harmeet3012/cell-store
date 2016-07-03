@@ -1,0 +1,78 @@
+["{\"id\":3,\"company\":\"Scull Candy\",\"product\":\"headphones\",\"specs\":\"dolby digital sound\",\"price\":\"Rs 800\",\"created_at\":\"2016-06-13T15:27:25.637Z\",\"updated_at\":\"2016-06-15T01:47:20.425Z\"}", "{\"id\":4,\"company\":\"Samsung\",\"product\":\"Galaxy J7\",\"specs\":\"820 Qualcomm Snapdragon Processor, 5MP+13MP, 3GB RAM, 4000Mah Li-ion Battery\",\"price\":\"Rs 25,350\",\"created_at\":\"2016-06-13T15:51:57.563Z\",\"updated_at\":\"2016-06-13T15:51:57.563Z\"}", "{\"id\":5,\"company\":\"Lenovo\",\"product\":\"A7000\",\"specs\":\"670 Octa core Snapdragon processor, 8MP+5MP, oxygen OS\",\"price\":\"Rs 10,000\",\"created_at\":\"2016-06-13T16:37:07.373Z\",\"updated_at\":\"2016-06-13T16:37:07.373Z\"}", "{\"id\":7,\"company\":\"Redmi\",\"product\":\"note 3 - mobile phone\",\"specs\":\"650 Qualcomm Snapdragon, 16MP+5MP, 1.8GHz/ 6 cores/ 64 bit, 3GB RAM\",\"price\":\"Rs 11,999\",\"created_at\":\"2016-06-19T14:00:04.031Z\",\"updated_at\":\"2016-06-19T14:00:04.031Z\"}"]["{\"id\":3,\"company\":\"Scull Candy\",\"product\":\"headphones\",\"specs\":\"dolby digital sound\",\"price\":\"Rs 800\",\"created_at\":\"2016-06-13T15:27:25.637Z\",\"updated_at\":\"2016-06-15T01:47:20.425Z\"}", "{\"id\":4,\"company\":\"Samsung\",\"product\":\"Galaxy J7\",\"specs\":\"820 Qualcomm Snapdragon Processor, 5MP+13MP, 3GB RAM, 4000Mah Li-ion Battery\",\"price\":\"Rs 25,350\",\"created_at\":\"2016-06-13T15:51:57.563Z\",\"updated_at\":\"2016-06-13T15:51:57.563Z\"}", "{\"id\":5,\"company\":\"Lenovo\",\"product\":\"A7000\",\"specs\":\"670 Octa core Snapdragon processor, 8MP+5MP, oxygen OS\",\"price\":\"Rs 10,000\",\"created_at\":\"2016-06-13T16:37:07.373Z\",\"updated_at\":\"2016-06-13T16:37:07.373Z\"}", "{\"id\":7,\"company\":\"Redmi\",\"product\":\"note 3 - mobile phone\",\"specs\":\"650 Qualcomm Snapdragon, 16MP+5MP, 1.8GHz/ 6 cores/ 64 bit, 3GB RAM\",\"price\":\"Rs 11,999\",\"created_at\":\"2016-06-19T14:00:04.031Z\",\"updated_at\":\"2016-06-19T14:00:04.031Z\"}"]<?xml version="1.0" encoding="UTF-8"?>
+<mobiles type="array">
+  <mobile>
+    <id type="integer">3</id>
+    <company>Scull Candy</company>
+    <product>headphones</product>
+    <specs>dolby digital sound</specs>
+    <price>Rs 800</price>
+    <created-at type="dateTime">2016-06-13T15:27:25Z</created-at>
+    <updated-at type="dateTime">2016-06-15T01:47:20Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">4</id>
+    <company>Samsung</company>
+    <product>Galaxy J7</product>
+    <specs>820 Qualcomm Snapdragon Processor, 5MP+13MP, 3GB RAM, 4000Mah Li-ion Battery</specs>
+    <price>Rs 25,350</price>
+    <created-at type="dateTime">2016-06-13T15:51:57Z</created-at>
+    <updated-at type="dateTime">2016-06-13T15:51:57Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">5</id>
+    <company>Lenovo</company>
+    <product>A7000</product>
+    <specs>670 Octa core Snapdragon processor, 8MP+5MP, oxygen OS</specs>
+    <price>Rs 10,000</price>
+    <created-at type="dateTime">2016-06-13T16:37:07Z</created-at>
+    <updated-at type="dateTime">2016-06-13T16:37:07Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">7</id>
+    <company>Redmi</company>
+    <product>note 3 - mobile phone</product>
+    <specs>650 Qualcomm Snapdragon, 16MP+5MP, 1.8GHz/ 6 cores/ 64 bit, 3GB RAM</specs>
+    <price>Rs 11,999</price>
+    <created-at type="dateTime">2016-06-19T14:00:04Z</created-at>
+    <updated-at type="dateTime">2016-06-19T14:00:04Z</updated-at>
+  </mobile>
+</mobiles>
+<?xml version="1.0" encoding="UTF-8"?>
+<mobiles type="array">
+  <mobile>
+    <id type="integer">3</id>
+    <company>Scull Candy</company>
+    <product>headphones</product>
+    <specs>dolby digital sound</specs>
+    <price>Rs 800</price>
+    <created-at type="dateTime">2016-06-13T15:27:25Z</created-at>
+    <updated-at type="dateTime">2016-06-15T01:47:20Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">4</id>
+    <company>Samsung</company>
+    <product>Galaxy J7</product>
+    <specs>820 Qualcomm Snapdragon Processor, 5MP+13MP, 3GB RAM, 4000Mah Li-ion Battery</specs>
+    <price>Rs 25,350</price>
+    <created-at type="dateTime">2016-06-13T15:51:57Z</created-at>
+    <updated-at type="dateTime">2016-06-13T15:51:57Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">5</id>
+    <company>Lenovo</company>
+    <product>A7000</product>
+    <specs>670 Octa core Snapdragon processor, 8MP+5MP, oxygen OS</specs>
+    <price>Rs 10,000</price>
+    <created-at type="dateTime">2016-06-13T16:37:07Z</created-at>
+    <updated-at type="dateTime">2016-06-13T16:37:07Z</updated-at>
+  </mobile>
+  <mobile>
+    <id type="integer">7</id>
+    <company>Redmi</company>
+    <product>note 3 - mobile phone</product>
+    <specs>650 Qualcomm Snapdragon, 16MP+5MP, 1.8GHz/ 6 cores/ 64 bit, 3GB RAM</specs>
+    <price>Rs 11,999</price>
+    <created-at type="dateTime">2016-06-19T14:00:04Z</created-at>
+    <updated-at type="dateTime">2016-06-19T14:00:04Z</updated-at>
+  </mobile>
+</mobiles>

@@ -1,0 +1,39 @@
+<% if @user.errors.any?%>
+  <% @user.errors.messages.each do |msg|%>
+  <%= msg%>
+<%end%>
+<%end%>
+<br/><br/><br/>
+<table align="center">
+    <%= form_for @user do |form|%>
+      <tr>
+          <td><%= form.label :name%></td>
+          <td><%= form.text_field :name%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :email%></td>
+          <td><%= form.email_field :email%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :password%></td>
+          <td><%= form.password_field :password%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :confirm_password%></td>
+          <td><%= form.password_field :confirm_password%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :mobile%></td>
+          <td><%= form.text_field :mobile%></td>
+      </tr>
+      <%= form.fields_for :image do | img |%>
+      <tr>
+        <td><%= img.label :photo, "Upload image"%></td>
+        <td><%= img.file_field :photo%></td>
+      </tr>
+      <%end%>
+      <tr>
+          <td><%= form.submit"Sign in"%></td>
+      </tr>
+    <%end%>
+</table>

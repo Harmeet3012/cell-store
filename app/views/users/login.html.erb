@@ -1,0 +1,25 @@
+<br/><br/><br/>
+<h5 align="left" style="color:blue"><%= "     .Refresh the page once"%></h5>
+
+<table align="center">
+    <%= form_for([@user], url: {:action => "validate_login"}, method: :put) do |form|%>
+      <tr>
+         <td><%= form.label :email%></td>
+         <td><%= form.email_field :email%></td>
+      </tr>
+      <tr>
+         <td><%= form.label :password%></td>
+         <td><%= form.password_field :password%></td>
+      </tr>
+      <tr>
+         <td><%= form.submit"login"%></td>
+      </tr>
+      
+    <%end%>
+
+ </table>
+ <br/>
+ <h4 align="left"><%= link_to "Sign up", new_user_path, :class=> "btn btn-primary"%></h4>
+ <h4 align="center"><%= link_to "forget password", users_forget_password_path%></h4>
+ 
+ 

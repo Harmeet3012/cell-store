@@ -1,0 +1,19 @@
+<h1 align="center">DATABASE</h1>
+<table border=1 class="table">
+    <tr class="danger">
+        <td>Nmae</td>
+        <td>Email</td>
+        <td>Mobile</td>
+        <td>Profile pic</td>
+    </tr>
+    <% @user.each do |user|%>
+    <tr class="success">
+        <td><%= user.name%></td>
+        <td><%= user.email%></td>
+        <td><%= user.mobile%></td>
+        <td><%= image_tag user.image.photo(:thumb) if !user.image.blank?%></td>
+    </tr>
+    <%end%>
+    </table>
+     
+   

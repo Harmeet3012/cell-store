@@ -1,0 +1,33 @@
+<p style="color:orange"><%= link_to "logged in as #{disp_message}" , edit_user_path(id: session[:user_id]) %></p>
+<h1 align="center">DATABASE</h1>
+<table border=1 class="table">
+    <tr class="danger">
+        <td>Company</td>
+        <td>Product</td>
+        <td>Specifications</td>
+        <td>Price</td>
+        <td>#</td>
+        <td>#</td>
+        <td>#</td>
+    </tr>
+    <% @mobile.each do |mobile|%>
+    <tr class="success">
+        <td><%= mobile.company%></td>
+        <td><%= mobile.product%></td>
+        <td><%= link_to "check specs",mobiles_specifications_path(id: mobile.id)%></td>
+        <td><%= mobile.price%></td>
+        <td><%= link_to "show",mobile_path(mobile)%></td>
+        <td><%= link_to "edit",edit_mobile_path(mobile)%></td>
+        <td><%= link_to "delete",mobile, method: :delete, data:{confirm: "ae you sure?"}%></td>
+    </tr>
+    <%end%>
+</table>
+<h1 align="center"><%= link_to "add products", new_mobile_path, :class=> "btn btn-primary"%></h1>
+<h1 align="left"><%= link_to "download in .csv", mobiles_download_path(format: "csv"), :class=> "btn btn-primary"%></h1>
+<h1 align="left"><%= link_to "download in .json", mobiles_download_path(format: "json"), :class=> "btn btn-primary"%></h1>
+<h1 align="left"><%= link_to "download in .xml", mobiles_download_path(format: "xml"), :class=> "btn btn-primary"%></h1>
+
+
+
+    
+   

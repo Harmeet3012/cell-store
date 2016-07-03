@@ -1,0 +1,5 @@
+id,company,product,specs,price,created_at,updated_at
+3,Scull Candy,headphones,dolby digital sound,Rs 800,2016-06-13 15:27:25.637137,2016-06-15 01:47:20.425808
+4,Samsung,Galaxy J7,"820 Qualcomm Snapdragon Processor, 5MP+13MP, 3GB RAM, 4000Mah Li-ion Battery","Rs 25,350",2016-06-13 15:51:57.563004,2016-06-13 15:51:57.563004
+5,Lenovo,A7000,"670 Octa core Snapdragon processor, 8MP+5MP, oxygen OS","Rs 10,000",2016-06-13 16:37:07.373641,2016-06-13 16:37:07.373641
+7,Redmi,note 3 - mobile phone,"650 Qualcomm Snapdragon, 16MP+5MP, 1.8GHz/ 6 cores/ 64 bit, 3GB RAM","Rs 11,999",2016-06-19 14:00:04.031902,2016-06-19 14:00:04.031902

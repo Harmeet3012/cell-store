@@ -1,0 +1,20 @@
+<table border=1 class="table">
+    <tr class="danger">
+        <td>Company</td>
+        <td>Product</td>
+        <td>Specifications</td>
+        <td>Price</td>
+    </tr>
+    <tr class="info">
+        <td><%= @mobile.company%></td>
+        <td><%= @mobile.product%></td>
+        <td><%= @mobile.specs%></td>
+        <td><%= @mobile.price%></td>
+        <%  @mobile.images.each do |img| %>
+        <td><%= image_tag img.photo(:thumb) if !img.blank?%></td>
+        <%end%>
+    </tr>
+    </table>
+        <%= link_to "List Products", mobiles_path, :class=> "btn btn-primary"%>
+
+<h1>Record Saved Succesfully!</h1>

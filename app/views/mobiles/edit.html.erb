@@ -1,0 +1,27 @@
+<h1 align="center">ENTER DATA</h1><br/><br/>
+<table>
+    <%= form_for @mobile do |form|%>
+    <tr>
+        <td><%= form.label :company%></td>
+        <td><%= form.text_field :company%></td>
+    </tr>
+    <tr>
+        <td><%= form.label :product%></td>
+        <td><%= form.text_field :product%></td>
+    </tr>
+    <tr>
+        <td><%= form.label :specs%></td>
+        <td><%= form.text_field :specs%></td>
+    </tr>
+    <tr>
+        <td><%= form.label :price%></td>
+        <td><%= form.text_field :price%></td>
+    </tr>
+    <tr>
+        <td><%= form.submit"Save"%></td>
+    </tr>
+     <%end%>
+</table>
+<br/>
+     <%= link_to "List Product",mobiles_path, :class=> "btn btn-primary"%>
+

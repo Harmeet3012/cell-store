@@ -1,0 +1,31 @@
+<% if @user.errors.any?%>
+  <% @user.errors.messages.each do |msg|%>
+  <%= msg%>
+<%end%>
+<%end%>
+<br/><br/><br/>
+<table align="center">
+    <%= form_for @user do |form|%>
+      <tr>
+          <td><%= form.label :name%></td>
+          <td><%= form.text_field :name%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :email%></td>
+          <td><%= form.email_field :email%></td>
+      </tr>
+      <tr>
+          <td><%= form.label :mobile%></td>
+          <td><%= form.text_field :mobile%></td>
+      </tr>
+      <%= form.fields_for :image do | img |%>
+      <tr>
+        <td><%= img.label :photo, "Upload image"%></td>
+        <td><%= img.file_field :photo%></td>
+      </tr>
+      <%end%>
+      <tr>
+          <td><%= form.submit "Update info"%></td>
+      </tr>
+    <%end%>
+</table>
