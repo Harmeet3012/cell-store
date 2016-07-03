@@ -51,7 +51,7 @@ class UsersController < ApplicationController
     if !session[:user_id].blank?
        redirect_to mobiles_path
     else
-       @user = User.new
+       render :login
     end
   end
 
