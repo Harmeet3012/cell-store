@@ -35,7 +35,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  config.action_mailer.default_url_options = { :host => '0.0.0.0', port: '8080' }
+  config.action_mailer.default_url_options = { :host => 'https://shoe-store-harmeet.c9users.io' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -45,7 +45,8 @@ Rails.application.configure do
     :user_name => "testrorappmail",
     :password => "testrorappmail!12",
     :authentication => "plain",
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :ssl => false 
   }
 config.action_mailer.perform_deliveries = true
   # Raises error for missing translations

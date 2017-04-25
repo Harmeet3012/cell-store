@@ -22,7 +22,7 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.serve_static_files = true #ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -76,7 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { :host => '127.0.0.1' }
+  config.action_mailer.default_url_options = { :host => 'https://shoe-store-harmeet.c9users.io' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -86,7 +86,8 @@ Rails.application.configure do
     :user_name => "testrorappmail",
     :password => "testrorappmail!12",
     :authentication => "plain",
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :ssl => false
   }
 config.action_mailer.perform_deliveries = true
 end

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     validates :mobile, presence: true, length: {is: 10}, numericality: {only_integer: true}
     has_one :image
     accepts_nested_attributes_for :image
-    
+    has_and_belongs_to_many :subjects
     def self.authenticate(email,password)
       @user = User.where(email: email, password: Digest::MD5.hexdigest(password))
       if not @user.blank?

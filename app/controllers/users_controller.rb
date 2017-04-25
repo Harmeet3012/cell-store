@@ -35,7 +35,6 @@ class UsersController < ApplicationController
   def create
    @user = User.new(user_params)
    if @user.save
-     byebug
      SendEmail.welcome_email(@user.email).deliver!
      redirect_to user_path(@user)
    else

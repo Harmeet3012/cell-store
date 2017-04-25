@@ -1,0 +1,15 @@
+<table>
+    <%= form_tag action: :save_subject , method: :post do %>
+      <% @subject.each do |s|%>
+       <tr>
+           <% if !s.name.blank?%>
+         <td><%= s.name%><%= check_box_tag s.name.to_sym%></td>
+         <%end%>
+        </tr>
+     <%end%>
+     
+     <tr>
+         <td><%= submit_tag "Save"%></td>
+         </tr>
+    <%end%>
+</table>

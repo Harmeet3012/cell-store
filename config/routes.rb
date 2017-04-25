@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get '/list_products', to: "mobiles#index"
   get '/add_products', to: "mobiles#new"
   get "users/login"
+  get "mobiles/select_subject"
+  post "mobiles/save_subject"
   put "users/validate_login"
   get "users/logout"
   get "users/forget_password"

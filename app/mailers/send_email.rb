@@ -7,7 +7,7 @@ class SendEmail < ApplicationMailer
   #
   def welcome_email(email)
     @email = email
-   mail(to: email,from: "harmeetsingh301296@gmail.com",subject:"Welcome to CELL-STORE")
+   mail(to: email,subject:"Welcome to CELL-STORE")
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml

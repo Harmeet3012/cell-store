@@ -3,9 +3,18 @@ class MobilesController < ApplicationController
   include ExtraFromProducts
   
   def index
-    @mobile = Mobile.all
+    @mobile = Mobile.paginate(per_page: 2, page: params[:page])
   end
-
+  def select_subject
+    @subject = Subject.all
+  end
+  def save_subject
+    @user = User.find session[:user_id]
+    subject_params.each do |key , value|
+      SubjectsUser.create!(user: @user, subject: Subject.where(name: key).last)
+    end
+    redirect_to action: :index
+  end
   def edit
     @mobile = Mobile.find(params[:id])
   end
@@ -53,6 +62,9 @@ class MobilesController < ApplicationController
   private
   def mobile_params
     params.require(:mobile).permit! #(:company, :product, :specs, :price)
+  end
+  def subject_params
+    params.delete_if {| key , value| value != "1"}
   end
 end
 

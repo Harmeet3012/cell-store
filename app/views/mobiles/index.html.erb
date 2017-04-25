@@ -21,12 +21,13 @@
         <td><%= link_to "delete",mobile, method: :delete, data:{confirm: "ae you sure?"}%></td>
     </tr>
     <%end%>
+      <% will_paginate @mobile%>
 </table>
 <h1 align="center"><%= link_to "add products", new_mobile_path, :class=> "btn btn-primary"%></h1>
 <h1 align="left"><%= link_to "download in .csv", mobiles_download_path(format: "csv"), :class=> "btn btn-primary"%></h1>
 <h1 align="left"><%= link_to "download in .json", mobiles_download_path(format: "json"), :class=> "btn btn-primary"%></h1>
 <h1 align="left"><%= link_to "download in .xml", mobiles_download_path(format: "xml"), :class=> "btn btn-primary"%></h1>
-
+<%= link_to "Select Subject", mobiles_select_subject_path%>
 
 
     
