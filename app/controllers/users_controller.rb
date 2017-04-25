@@ -35,7 +35,7 @@ class UsersController < ApplicationController
   def create
    @user = User.new(user_params)
    if @user.save
-     SendEmail.welcome_email(@user.email).deliver
+     #SendEmail.welcome_email(@user.email).deliver
      redirect_to user_path(@user)
    else
      render :new
@@ -48,11 +48,7 @@ class UsersController < ApplicationController
   
   def login
    @user = User.new
-    if !session[:user_id].blank?
-       redirect_to mobiles_path
-    else
-      render :login
-    end
+    
   end
 
   def validate_login

@@ -44,7 +44,7 @@ Rails.application.configure do
     :domain => "smtp.gmail.com",
     :user_name => "testrorappmail",
     :password => "testrorappmail!12",
-    :authentication => "login
+    :authentication => "plain
     ",
     :enable_starttls_auto => true,
     :ssl => false 
