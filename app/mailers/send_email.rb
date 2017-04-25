@@ -7,7 +7,7 @@ class SendEmail < ApplicationMailer
   #
   def welcome_email(email)
     @email = email
-   mail(to: email,subject:"Welcome to CELL-STORE")
+   mail(to: email,from: "testrorappmail",subject:"Welcome to CELL-STORE")
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -17,6 +17,6 @@ class SendEmail < ApplicationMailer
   #
   def forget_password
     @email = email
-    mail(to: email,from: "harmeet301296singh@gmail.com",subject:"Changing current password")
+    mail(to: email,from: "testrorappmail",subject:"Changing current password")
   end
 end
